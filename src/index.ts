@@ -14,9 +14,10 @@
  * ```
  * @returns 返回依赖
  */
-function getList(list: string) {
+function getList(list: boolean) {
   return list;
 }
+
 
 export default {
   getList,

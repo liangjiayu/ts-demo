@@ -4,8 +4,9 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "dev": "webpack-dev-server --config scripts/webpack.dev.js",
+    "build": "webpack --config scripts/webpack.prod.js",
+    "lib": "node scripts/build-lib.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "shelljs": "^0.8.4",
     "ts-loader": "^7.0.5",
     "typedoc": "^0.17.7",
     "typescript": "^3.9.5",
